@@ -129,10 +129,18 @@ font-family: $fontFamily;
  @import "modal";
  @import "common";
  @import "ratings";
+ @import "catalog";
+ @import "select";
 
 // Подключение стилей отдельных страниц
 @import "home";
 .page {
+    &__inner {
+      padding-top: rem(30);
+    }
+    &__header {
+      margin-bottom: rem(30);
+    }
 		&__main-block {
 		}
     &__catalog-cards {
