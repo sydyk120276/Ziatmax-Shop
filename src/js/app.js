@@ -1,6 +1,8 @@
 import "./files/script.js"
 import "./files/sliders.js"
 import "./files/ratings.js"
+import "./files/range.js"
+import "./files/spoller.js"
 // import * as flsFuncktions from "./modules/functions.js"
 
 // Подключение основного файла стилей

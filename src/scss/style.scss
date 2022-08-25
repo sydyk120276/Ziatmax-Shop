@@ -131,6 +131,7 @@ font-family: $fontFamily;
  @import "ratings";
  @import "catalog";
  @import "select";
+ @import "range";
 
 // Подключение стилей отдельных страниц
 @import "home";
