@@ -5,6 +5,7 @@
 
 		&__body {
       display: grid;
+      align-items: start;
       grid-template-columns: rem(375) 1fr;
       gap: rem(30);
 		}
@@ -26,7 +27,7 @@
 		&__products {
       display: grid;
       gap: rem(30);
-      grid-template-columns: repeat(auto-fill, minmax(rem(290), rem(375)));
+      grid-template-columns: repeat(auto-fit, minmax(rem(290), rem(375)));
       &:not(:last-child) {
        @include adaptive-value("margin-bottom", 60, 30);
       }
@@ -66,13 +67,22 @@
 		}
 }
 .price-filter {
+  &._spoller-active {
+  &:not(:last-child) {
+    margin-bottom: rem(20);
+  }
+    }
   padding: rem(30);
+
 		&__title {
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-direction: row-reverse;
       width: 100%;
+      font-weight: 600;
+      font-size: rem(20);
+      line-height: math.div(24, 20);
       &::before {
         color: $mainOrange;
         font-size: rem(8);
@@ -87,17 +97,22 @@
 		}
 
 		&__body {
+    &._spoller-active {
       padding: rem(30) 0 0 0;
+    }
 		}
 
 		&__inputs {
-      display: flex;
+      display: none;
       border: 1px solid #cbcbcb;
       border-radius: rem(3);
       overflow: hidden;
       &:not(:last-child) {
-        margin-bottom: rem(30);
+        margin-bottom: rem(40);
       }
+      &._spoller-active {
+          display: flex;
+    }
 		}
 
 		&__input {
@@ -108,8 +123,53 @@
 		}
 
 		&__range {
+      display: none;
+    &._spoller-active {
+      display: flex;
+    }
 		}
 }
+
+.item-filter-catalog {
+
+		&__title {
+      background-color: $mainDarkColor;
+      width: 100%;
+      color: #fff;
+      padding: rem(13) rem(30);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row-reverse;
+      &::before {
+        color: $mainOrange;
+        font-size: rem(8);
+        transform: rotate(-180deg);
+        transition: transform 0.3s ease 0s;
+      }
+      &._spoller-active {
+          &::before {
+            transform: rotate(0deg);
+          }
+      }
+		}
+
+		&__body {
+      padding: rem(30);
+      display: none;
+      &._spoller-active {
+          display: flex;
+          flex-direction: column;
+    }
+
+		}
+    &__checkbox {
+      &:not(:last-child) {
+        margin-bottom: rem(22);
+      }
+    }
+}
+
 
 
 
