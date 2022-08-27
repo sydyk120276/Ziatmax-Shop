@@ -1,0 +1,41 @@
+.product {
+
+		&__container {
+		}
+
+		&__main {
+		}
+}
+.main-product {
+
+		&__images {
+		}
+}
+.images-product {
+
+		&__slider {
+      display: grid;
+      overflow: hidden;
+
+		}
+
+		&__swiper {
+      display: flex;
+		}
+
+		&__slide-ibg_contain {
+      padding-bottom: percent(577, 754);
+		}
+
+		&__thumbs {
+		}
+}
+.thumbs-images {
+
+		&__swiper {
+		}
+
+		&__slide-ibg {
+      padding-bottom: percent(177, 192);
+		}
+}

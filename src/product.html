@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+"title": "Карточка товара"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/header.html', {})
+    <main class="page page__inner">
+      <div class="page__header">
+        <div class="page__container">
+          <nav class="page__breadcrumbs breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a href="" class="breadcrumbs__link">Главная</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <a href="" class="breadcrumbs__link">Разделочные ножи</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <span class="breadcrumbs__current">Нож Снегирь</span>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+     <div class="product">
+       <div class="product__container">
+         <div class="product__main main-product">
+           <div class="main-product__images images-product">
+             <div class="images-product__slider">
+               <div class="images-product__swiper">
+                 <div class="images-product__slide-ibg_contain">
+                   <img src="@img/product/01.jpg" alt="Картинка">
+                 </div>
+                 <div class="images-product__slide-ibg_contain">
+                   <img src="@img/product/01.jpg" alt="Картинка">
+                 </div>
+                 <div class="images-product__slide-ibg_contain">
+                   <img src="@img/product/01.jpg" alt="Картинка">
+                 </div>
+                 <div class="images-product__slide-ibg_contain">
+                   <img src="@img/product/01.jpg" alt="Картинка">
+                 </div>
+                 <div class="images-product__slide-ibg_contain">
+                   <img src="@img/product/01.jpg" alt="Картинка">
+                 </div>
+               </div>
+             </div>
+                <!-- <div class="images-product__thumbs thumbs-images">
+               <div class="thumbs-images__swiper">
+                 <div class="thumbs-images__slide-ibg">
+                    <img src="@img/product/01.jpg" alt="Картинка">
+                 </div>
+                 <div class="thumbs-images__slide-ibg">
+                    <img src="@img/product/01.jpg" alt="Картинка">
+                 </div>
+                 <div class="thumbs-images__slide-ibg">
+                    <img src="@img/product/01.jpg" alt="Картинка">
+                 </div>
+                 <div class="thumbs-images__slide-ibg">
+                    <img src="@img/product/01.jpg" alt="Картинка">
+                 </div>
+                 <div class="thumbs-images__slide-ibg">
+                    <img src="@img/product/01.jpg" alt="Картинка">
+                 </div>
+                 <div class="thumbs-images__slide-ibg">
+                    <img src="@img/product/01.jpg" alt="Картинка">
+                 </div>
+               </div>
+             </div> -->
+           </div>
+         </div>
+       </div>
+     </div>
+    </main>
+    @@include('html/footer.html', {})
+  </div>
+  @@include('html/popup.html', {})
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>

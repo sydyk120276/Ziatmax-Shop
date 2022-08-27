@@ -1,4 +1,4 @@
-import Swiper, { Navigation, Pagination, Parallax, Autoplay } from "swiper";
+import Swiper, { Navigation, Pagination, Parallax, Autoplay, Thumbs } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -193,6 +193,126 @@ function initSliders() {
       //   prevEl: "about__more .more__item_prev",
       // },
     });
+  }
+
+  if (document.querySelector(".images-product")) {
+    new Swiper(".images-product__slider", {
+      // Подключаем модули слайдера для конкретного случая
+      modules: [Navigation, Pagination, Autoplay],
+      // effect: 'fade',
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      observer: true,
+      watchOverflow: true,
+      observerParents: true,
+      slidesPerView: 1,
+      spaceBetween: 19,
+      parallax: true,
+      // autoHeight: true,
+      speed: 800,
+      //touchRatio: 0,
+      //silulateTouch: false,
+      // loop: true,
+      //preloadImages: false,
+      //lazy: true,
+      //Dotts,
+      pagination: {
+        el: ".products-slider__dotts",
+        clickable: true,
+        dynamicBullets: true,
+      },
+      // breakpoints: {
+      //   320: {
+      //     slidesPerView: 1,
+      //     spaceBetween: 10,
+      //   },
+      //   520: {
+      //     slidesPerView: 1,
+      //     spaceBetween: 0,
+      //     autoHeight: true,
+      //   },
+      //   768: {
+      //     slidesPerView: 1,
+      //     spaceBetween: 20,
+      //   },
+      //   992: {
+      //     slidesPerView: 1,
+      //     spaceBetween: 20,
+      //   },
+      //   1370: {
+      //     slidesPerView: 1,
+      //     spaceBetween: 30,
+      //   },
+      // },
+      on: {},
+      // Arrows
+      // navigation: {
+      //   nextEl: ".about__more .more__item_next",
+      //   prevEl: "about__more .more__item_prev",
+      // },
+    });
+    // new Swiper(".images-product__slider", {
+    //   // Подключаем модули слайдера для конкретного случая
+    //   modules: [Navigation, Pagination, Autoplay, Thumbs],
+    //   // effect: 'fade',
+    //   autoplay: {
+    //     delay: 3000,
+    //     disableOnInteraction: false,
+    //   },
+    //   thumbs: {
+    //     swiper: thumbsSwiper,
+    //   },
+    //   observer: true,
+    //   watchOverflow: true,
+    //   observerParents: true,
+    //   slidesPerView: 1,
+    //   spaceBetween: 30,
+    //   // autoHeight: true,
+    //   speed: 800,
+    //   //touchRatio: 0,
+    //   //silulateTouch: false,
+    //   // loop: true,
+    //   //preloadImages: false,
+    //   //lazy: true,
+    //   //Dotts,
+    //   // pagination: {
+    //   //   el: ".products-new__dotts",
+    //   //   clickable: true,
+    //   //   // dynamicBullets: true,
+    //   // },
+    //   // breakpoints: {
+    //   //   320: {
+    //   //     slidesPerView: 1,
+    //   //     spaceBetween: 0,
+    //   //     autoHeight: true,
+    //   //   },
+    //   //   520: {
+    //   //     slidesPerView: 1,
+    //   //     spaceBetween: 0,
+    //   //     autoHeight: true,
+    //   //   },
+    //   //   768: {
+    //   //     slidesPerView: 2,
+    //   //     spaceBetween: 20,
+    //   //   },
+    //   //   992: {
+    //   //     slidesPerView: 2,
+    //   //     spaceBetween: 20,
+    //   //   },
+    //   //   1370: {
+    //   //     slidesPerView: 3,
+    //   //     spaceBetween: 30,
+    //   //   },
+    //   // },
+    //   on: {},
+    //   // Arrows
+    //   // navigation: {
+    //   //   nextEl: ".about__more .more__item_next",
+    //   //   prevEl: "about__more .more__item_prev",
+    //   // },
+    // });
   }
 }
 
