@@ -134,6 +134,7 @@ font-family: $fontFamily;
  @import "range";
  @import "checkbox";
  @import "product";
+ @import "quantity";
 
 // Подключение стилей отдельных страниц
 @import "home";

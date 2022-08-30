@@ -2,7 +2,7 @@ import "./files/script.js"
 import "./files/sliders.js"
 import "./files/ratings.js"
 import "./files/range.js"
-import "./files/spoller.js"
+
 // import * as flsFuncktions from "./modules/functions.js"
 
 // Подключение основного файла стилей
@@ -451,6 +451,7 @@ DynamicAdapt.prototype.arraySort = function (arr) {
 const da = new DynamicAdapt("max");
 da.init();
 
-
+import "./files/spoller.js";
+import "./files/quantity.js";
 
 //========================================
