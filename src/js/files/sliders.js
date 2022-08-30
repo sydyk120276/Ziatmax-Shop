@@ -215,18 +215,6 @@ function initSliders() {
      //lazy: true,
      //Dotts,
      breakpoints: {
-       320: {
-         slidesPerView: 1,
-         spaceBetween: 10,
-       },
-       520: {
-         slidesPerView: 1,
-         spaceBetween: 0,
-         autoHeight: true,
-       },
-       768: {
-         slidesPerView: 2,
-       },
        992: {
          slidesPerView: 3,
        },
