@@ -1,5 +1,6 @@
 // Основной модуль
 import gulp from 'gulp'
+import ghPages from 'gulp-gh-pages'
 // Импорт путей
 import { path } from './gulp/config/path.js'
 // Импорт общих плагинов
@@ -57,3 +58,9 @@ export { deployFTP };
 
 // Выполнение сценария по умолчанию
 gulp.task('default', dev)
+
+// Deploy
+gulp.task('deploy', function () {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
+});
